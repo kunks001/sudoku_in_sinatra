@@ -10,7 +10,7 @@ attr_accessor :neighbours
 	end
 
 	def inspect
-		"cell: #{value}"
+		value
 	end
 
 	def value

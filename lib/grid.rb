@@ -46,6 +46,14 @@ attr_reader :grid
 		@boxes = boxes.each_slice(9).to_a
 	end
 
+	def boxes_to_s
+		to_s = []
+		box = boxes.flatten.map(&:value)
+		slices = (box.each_slice(3).to_a).each_slice(3).to_a
+		slices.each {|slice| to_s << slice.transpose}
+		to_s.flatten!.join
+	end
+
 	def set_cell_neighbours
 		cells.each do |c|
 			c.neighbours = cell_neighbours(c)
