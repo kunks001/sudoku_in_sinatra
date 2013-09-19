@@ -1,6 +1,6 @@
 class Grid
 
-attr_accessor :cells
+attr_accessor :cells, :rows, :boxes
 attr_reader :grid
 
 	def initialize(num = '015003002000100906270068430490002017501040380003905000900081040860070025037204600')
@@ -12,18 +12,6 @@ attr_reader :grid
 		row_setup
 		boxes_setup
 		set_cell_neighbours
-	end
-
-	def cells
-		@cells
-	end
-
-	def rows
-		@rows
-	end
-
-	def boxes
-		@boxes
 	end
 
 	def setup(num)
@@ -44,14 +32,6 @@ attr_reader :grid
 	def return_boxes
 		boxes = @boxes.flatten!
 		@boxes = boxes.each_slice(9).to_a
-	end
-
-	def boxes_to_s
-		to_s = []
-		box = boxes.flatten.map(&:value)
-		slices = (box.each_slice(3).to_a).each_slice(3).to_a
-		slices.each {|slice| to_s << slice.transpose}
-		to_s.flatten!.join
 	end
 
 	def set_cell_neighbours

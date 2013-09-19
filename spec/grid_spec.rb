@@ -52,5 +52,21 @@ let(:cell){grid.cells[0]}
 		it 'return an array of cell values' do
 			expect(grid.values[0]).to be_an Integer
 		end
+
+		it 'solve given a single row' do
+			x = (1..9).to_a.shuffle+Array.new(72,0)
+			x = x.join
+			grid2 = Grid.new(x)
+			grid2.solve
+			expect(grid2).to be_solved
+		end
+
+		it 'solve given a single box' do
+			x = [1,3,7].shuffle + Array.new(6,0) + [4,8,9].shuffle + Array.new(6,0) + [2,6,5].shuffle + Array.new(60,0)
+			x = x.join
+			grid3 = Grid.new(x)
+			grid3.solve
+			expect(grid3).to be_solved
+		end
 	end
 end

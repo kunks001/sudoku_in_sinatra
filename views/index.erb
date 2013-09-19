@@ -8,26 +8,31 @@
 
   <h1>Life is too short for playing sudoku</h1>
 
+  <div id="flash">
+    <%= flash[:notice] %>
+  </div>
+
   <div id="Sudoku">
-    <% 3.times do |row| %>
-      <div class="row">
-        <% 3.times do |box| %>
-          <div class="box">
-            <% 3.times do |cell_row| %>
-              <div class="cell_row">
-                <% 3.times do |cell| %>
-                  <div class="cell">
-                    <% cell_index = row * 27 + box * 3 + cell_row * 9 + cell %>
-                    <% cell_value = @current_solution[cell_index] %>
-                    <input type="text" maxlength="1" autocomplete="off" value=<%= cell_value %> >
-                  </div>
-                <%end%>
-              </div>
-            <%end%>
-          </div>
-        <%end%>
-      </div>
-    <%end%>
+    <form action="/" method="post">
+      <% 3.times do |row| %>
+        <div class="row">
+          <% 3.times do |box| %>
+            <div class="box">
+              <% 3.times do |cell_row| %>
+                <div class="cell_row">
+                  <% 3.times do |cell| %>
+                    <div class="cell">
+                      <%= partial :_cell, :locals=>{:cell_index => row*27+box*3+cell_row*9+cell} %>
+                    </div>
+                  <%end%>
+                </div>
+              <%end%>
+            </div>
+          <%end%>
+        </div>
+      <%end%>
+      <button>Check solution</button>
+    </form>
   </div>
 </body>
 </html>

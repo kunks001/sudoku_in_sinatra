@@ -8,11 +8,33 @@ div.box, div.cell{
 }
 
 .cell input {
-	width: 30px;
-	height: 30px;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	font-size: 18;
+	font-family: Ariel;
 }
 
 #sudoku {
 	font-size: 0;
 	text-align: center;
+}
+
+.incorrect {
+	background-color: yellow;
+}
+
+.value-provided {
+	background-color: #DDD;
+}
+
+#flash {
+  margin: 20px;
+}
+
+.box {
+	border-style:solid;
+	border-width:2px;
+	margin-top:-2px;
+	margin-left:-2px;
 }
