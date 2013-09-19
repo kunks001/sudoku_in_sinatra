@@ -23,13 +23,27 @@ def puzzle(sudoku)
   sudoku = sudoku.dup
   sudoku = sudoku.each_slice(9).to_a
 
-	while sudoku.flatten.count { |value| value == "0"} < 45
-    sudoku.each do |box|
-		x = rand(0..8)
-		box[x] = "0"
-  end
+  	while sudoku.flatten.count { |value| value == "0"} < 45
+      sudoku.each do |box|
+  		x = rand(0..8)
+  		box[x] = "0"
+    end
 	end
 	sudoku = sudoku.flatten
+  sudoku
+end
+
+def hard_puzzle(sudoku)
+  sudoku = sudoku.dup
+  sudoku = sudoku.each_slice(9).to_a
+
+    while sudoku.flatten.count { |value| value == "0"} < 60
+      sudoku.each do |box|
+      x = rand(0..8)
+      box[x] = "0"
+    end
+  end
+  sudoku = sudoku.flatten
   sudoku
 end
 
@@ -40,6 +54,15 @@ def generate_new_puzzle_if_necessary
   session[:puzzle] = puzzle(sudoku)
   session[:current_solution] = session[:puzzle]
 end
+
+def generate_hard_puzzle
+  return if session[:current_solution]
+  sudoku = random_sudoku
+  session[:solution] = sudoku
+  session[:puzzle] = hard_puzzle(sudoku)
+  session[:current_solution] = session[:puzzle]
+end
+
 
 def prepare_to_check_solution
   @check_solution = session[:check_solution]
@@ -86,9 +109,15 @@ get '/solution' do
   erb :index
 end
 
-get '/cleanup' do
+get '/easy_puzzle' do
   session[:current_solution] = nil
   generate_new_puzzle_if_necessary
+  redirect to("/")
+end
+
+get '/hard_puzzle' do
+  session[:current_solution] = nil
+  generate_hard_puzzle
   redirect to("/")
 end
 
