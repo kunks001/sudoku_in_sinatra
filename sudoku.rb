@@ -121,6 +121,11 @@ get '/hard_puzzle' do
   redirect to("/")
 end
 
+get '/clear_solution' do
+  @current_solution = session[:current_solution]
+  redirect to("/")
+end
+
 helpers do
   def colour_class(solution_to_check, puzzle_value, current_solution_value, solution_value)
     must_be_guessed = puzzle_value == '0'

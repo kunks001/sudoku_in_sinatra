@@ -34,5 +34,14 @@
       <button>Check solution</button>
     </form>
   </div>
+
+  <a href="/easy_puzzle">New easy puzzle</a>
+  <a href="/hard_puzzle">New hard puzzle</a>
+    <% if @current_solution == session[:current_solution]%>
+      <a href="/solution">Bored? Check the solution!</a>
+      <% end %>
+    <% if @current_solution == session[:solution] %>
+      <a href="/clear_solution">Back to puzzle</a>
+    <% end %>
 </body>
 </html>
