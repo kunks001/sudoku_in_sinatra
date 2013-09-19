@@ -2,5 +2,8 @@
  <% colour_class = colour_class(@check_solution, 
  @puzzle[cell_index], 
  @current_solution[cell_index], 
- @solution[cell_index])  %>
- <input name="cell[]" type="text" maxlength="1" autocomplete="off" value="<%= cell_value %>" class="<%= colour_class %>">
+ @solution[cell_index]) %>
+
+ <% readonly(colour_class) %>
+
+ <input name="cell[]" type="text" maxlength="1" autocomplete="off" value="<%= cell_value %>" class="<%= colour_class %>" <%= readonly(colour_class) %> >

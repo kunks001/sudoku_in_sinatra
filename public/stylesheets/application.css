@@ -1,6 +1,9 @@
 body {
 	text-align: center;
 	font-family: Arial;
+	background: url(/images/kanagawa_wave.jpg) no-repeat 0 0 fixed;
+	background-size: cover;
+
 }
 
 div.box, div.cell{
@@ -30,6 +33,7 @@ div.box, div.cell{
 
 #flash {
   margin: 20px;
+  height: 30px;
 }
 
 .box {
@@ -37,4 +41,9 @@ div.box, div.cell{
 	border-width:2px;
 	margin-top:-2px;
 	margin-left:-2px;
+}
+
+#logo {
+	margin-top: 30px;
+	width: 350px;
 }

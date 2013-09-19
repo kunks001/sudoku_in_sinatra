@@ -1,4 +1,4 @@
-  <h1>Life is too short for playing sudoku</h1>
+ <img id="logo" src="/images/logo.png">
 
   <div id="flash">
     <%= flash[:notice] %>
@@ -23,19 +23,29 @@
           <%end%>
         </div>
       <%end%>
-      <button name="clicked_button" type="submit" value="check_solution">Check solution</button>
-      <button name="clicked_button" type="submit" value="save">Save</button>
+      
+      <button class="clicked-button" name="clicked_button" type="submit" value="check_solution">
+        Check solution
+      </button>
+
+      <button class="clicked-button" name="clicked_button" type="submit" value="save">
+        Save
+      </button>
 
       <% if @current_solution == session[:current_solution] || session[:puzzle] && @current_solution != session[:solution] %>
-    <button><a href="/solution">Bored? Check the solution!</a></button>
-  <% end %>
+        <button class="clicked-button" name="clicked_button" type="submit" value="check_finished_solution">
+          Bored? Check the solution!
+        </button>
+      <% end %>
 
-  <% if @current_solution == session[:solution] %>
-   <button> <a href="/clear_solution">Back to puzzle</a></button>
-  <% end %>
-    </form> 
-  </div>
+    <% if @current_solution == session[:solution] %>
+      <a href="/clear_solution"><button class="clicked-button" >
+        Back to puzzle</button>
+      </a>
+    <% end %>
+  </form> 
+</div>
 
-  <a href="/easy_puzzle">New easy puzzle</a>
-  <a href="/hard_puzzle">New hard puzzle</a>
-  <a href="/restart">Restart</a>
+<a href="/easy_puzzle">New easy puzzle</a>
+<a href="/hard_puzzle">New hard puzzle</a>
+<a href="/restart">Restart</a>
