@@ -25,16 +25,17 @@
       <%end%>
       <button name="clicked_button" type="submit" value="check_solution">Check solution</button>
       <button name="clicked_button" type="submit" value="save">Save</button>
+
+      <% if @current_solution == session[:current_solution] || session[:puzzle] && @current_solution != session[:solution] %>
+    <button><a href="/solution">Bored? Check the solution!</a></button>
+  <% end %>
+
+  <% if @current_solution == session[:solution] %>
+   <button> <a href="/clear_solution">Back to puzzle</a></button>
+  <% end %>
     </form> 
   </div>
 
   <a href="/easy_puzzle">New easy puzzle</a>
   <a href="/hard_puzzle">New hard puzzle</a>
-
-  <% if @current_solution == session[:current_solution] || session[:puzzle] && @current_solution != session[:solution] %>
-    <a href="/solution">Bored? Check the solution!</a>
-  <% end %>
-
-  <% if @current_solution == session[:solution] %>
-    <a href="/clear_solution">Back to puzzle</a>
-  <% end %>
+  <a href="/restart">Restart</a>
