@@ -1,11 +1,3 @@
-<html>
-<head>
-  <title>Sudoku Game</title>
-  <link rel="stylesheet" type="text/css" href="/stylesheets/application.css">
-</head>
-
-<body>
-
   <h1>Life is too short for playing sudoku</h1>
 
   <div id="flash">
@@ -31,17 +23,18 @@
           <%end%>
         </div>
       <%end%>
-      <button>Check solution</button>
-    </form>
+      <button name="clicked_button" type="submit" value="check_solution">Check solution</button>
+      <button name="clicked_button" type="submit" value="save">Save</button>
+    </form> 
   </div>
 
   <a href="/easy_puzzle">New easy puzzle</a>
   <a href="/hard_puzzle">New hard puzzle</a>
-    <% if @current_solution == session[:current_solution]%>
-      <a href="/solution">Bored? Check the solution!</a>
-      <% end %>
-    <% if @current_solution == session[:solution] %>
-      <a href="/clear_solution">Back to puzzle</a>
-    <% end %>
-</body>
-</html>
+
+  <% if @current_solution == session[:current_solution] || session[:puzzle] && @current_solution != session[:solution] %>
+    <a href="/solution">Bored? Check the solution!</a>
+  <% end %>
+
+  <% if @current_solution == session[:solution] %>
+    <a href="/clear_solution">Back to puzzle</a>
+  <% end %>

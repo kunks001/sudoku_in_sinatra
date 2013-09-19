@@ -89,7 +89,7 @@ end
 get '/' do
   prepare_to_check_solution
   generate_new_puzzle_if_necessary
-  @current_solution = session[:current_solution] || session[:puzzle]
+  @current_solution = session[:current_solution]
   @solution = session[:solution]
   @puzzle = session[:puzzle]
   erb :index
@@ -98,15 +98,23 @@ end
 post "/" do
   cells = box_order_to_row_order(params["cell"])
   session[:current_solution] = cells.map{|value| value.to_i }.join
-  session[:check_solution] = true
+  if params[:clicked_button] == "check_solution"
+    session[:check_solution] = true
+  elsif params[:clicked_button] == "save"
+    session[:check_solution] = false
+  end
   redirect to("/")
 end
 
 get '/solution' do
-	@current_solution = session[:solution]
-  @solution = session[:solution]
-  @puzzle = session[:puzzle]
-  erb :index
+  if session[:current_solution] = nil
+    redirect to("/")
+  else
+  	@current_solution = session[:solution]
+    @solution = session[:solution]
+    @puzzle = session[:puzzle]
+    erb :index
+  end
 end
 
 get '/easy_puzzle' do
@@ -122,8 +130,10 @@ get '/hard_puzzle' do
 end
 
 get '/clear_solution' do
-  @current_solution = session[:current_solution]
-  redirect to("/")
+  @current_solution = session[:current_solution] || session[:puzzle]
+  @solution = session[:solution]
+  @puzzle = session[:puzzle]
+  erb :index
 end
 
 helpers do
