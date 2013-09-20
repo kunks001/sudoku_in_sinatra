@@ -1,1 +1,1 @@
-web: bundle exec ruby sudoku.rb -p $PORT
+web: bundle exec rackup config.ru
