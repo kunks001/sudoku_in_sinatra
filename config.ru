@@ -1,4 +1,4 @@
 require './sudoku'
 require './routes/routes'
 
-run Sudoku
+run Sinatra::Application
