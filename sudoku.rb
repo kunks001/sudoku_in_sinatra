@@ -1,3 +1,5 @@
+class Sudoku < Sinatra::Base
+
 require 'sinatra'
 require_relative './lib/grid'
 require_relative './lib/cell'
@@ -85,4 +87,6 @@ def box_order_to_row_order(cells)
     end
     memo += three_rows_of_three.flatten
   }
+end
+
 end
