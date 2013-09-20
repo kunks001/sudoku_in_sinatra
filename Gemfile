@@ -7,6 +7,8 @@ gem 'sinatra-partial'
 gem 'sinatra-mapping'
 gem 'rack-flash3'
 
+gem 'unicorn'
+
 group :development do
 	gem 'shotgun'
 	gem 'guard'
