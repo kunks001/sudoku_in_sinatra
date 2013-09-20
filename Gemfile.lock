@@ -17,6 +17,7 @@ GEM
       rb-kqueue (>= 0.2)
     lumberjack (1.0.4)
     method_source (0.8.2)
+    newrelic_rpm (3.6.7.152)
     pry (0.9.12.2)
       coderay (~> 1.0.5)
       method_source (~> 0.8)
@@ -56,6 +57,7 @@ PLATFORMS
 
 DEPENDENCIES
   guard
+  newrelic_rpm
   rack-flash3
   shotgun
   sinatra

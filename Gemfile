@@ -7,6 +7,7 @@ gem 'sinatra-partial'
 gem 'sinatra-mapping'
 gem 'rack-flash3'
 
+gem 'newrelic_rpm'
 gem 'unicorn'
 
 group :development do
