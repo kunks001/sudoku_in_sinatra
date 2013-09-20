@@ -1,8 +1,8 @@
  <img id="logo" src="/images/logo.png">
-
+ 
   <div id="flash">
-    <%= flash[:notice] %>
-  </div>
+    <div id="flash_notice"><%= flash.now[:notice] %></div>
+  </div> 
 
   <div id="Sudoku">
     <form action="/" method="post">
@@ -24,17 +24,17 @@
         </div>
       <%end%>
       
-      <button class="clicked-button" name="clicked_button" type="submit" value="check_solution">
-        Check solution
+      <button class="clicked-button" id="check-answers-button" name="clicked_button" type="submit" value="check_solution">
+        <img src="/images/check_answers_button.png" id="check-answers-image">
       </button>
 
-      <button class="clicked-button" name="clicked_button" type="submit" value="save">
-        Save
+      <button class="clicked-button" id="save-button" name="clicked_button" type="submit" value="save">
+        <img src="/images/save_button.png" id="save-button-image">
       </button>
 
       <% if @current_solution == session[:current_solution] || session[:puzzle] && @current_solution != session[:solution] %>
-        <button class="clicked-button" name="clicked_button" type="submit" value="check_finished_solution">
-          Bored? Check the solution!
+        <button class="clicked-button" id="see-solution-button" name="clicked_button" type="submit" value="check_finished_solution">
+          <img src="/images/see_solution.png" id="see-solution-image">
         </button>
       <% end %>
 
@@ -45,7 +45,9 @@
     <% end %>
   </form> 
 </div>
-
-<a href="/easy_puzzle">New easy puzzle</a>
-<a href="/hard_puzzle">New hard puzzle</a>
-<a href="/restart">Restart</a>
+<div id="links">
+  <a href="/easy_puzzle">NEW: EASY</a>
+  <a href="/hard_puzzle">NEW: HARD</a>
+  <a href="/restart">RESTART</a>
+</div>
+<p>Made by Srikanth Kunkulagunta at <a href="http://makersacademy.com">Makers Academy</a>, using ruby and sinatra.</p>

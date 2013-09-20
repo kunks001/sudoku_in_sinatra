@@ -10,12 +10,69 @@ div.box, div.cell{
 	display: inline-block;
 }
 
+a {
+	margin-top: 20px;
+}
+
+.clicked-button{
+	margin-top: 30px;
+	background-color: rgba(0,0,0,0);
+	border-width: 0;
+}
+
+#save-button{
+	width: 240px;
+	text-align: center;
+}
+
+#save-button-image {
+	width: 180px;
+}
+
+#check-answers-button {
+	width: 240px;
+	text-align: center;
+}
+
+#check-answers-image {
+	width: 220px;
+}
+
+#see-solution-button {
+	width: 240px;
+	text-align: center;
+}
+
+#see-solution-image {
+	width: 190px;
+	margin-bottom: -10px;
+}
+
+#links {
+	margin-top: 20px;
+}
+
+#links a {
+	text-decoration: none;
+	font-size: 20px;
+	font-family: Ariel;
+	color: #fff;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
 .cell input {
 	width: 40px;
 	height: 40px;
 	text-align: center;
-	font-size: 18;
+	font-size: 22;
+	border-width: 1px;
+	border-color: rgba(0,0,0,0.4);
+	font-weight: bold;
 	font-family: Ariel;
+}
+
+.cell {
 }
 
 #sudoku {
@@ -24,16 +81,23 @@ div.box, div.cell{
 }
 
 .incorrect {
-	background-color: yellow;
+	background-color: rgba(130,230,255,0.8);
 }
 
 .value-provided {
-	background-color: #DDD;
+	background-color: rgba(230,230,230, 0.8);
 }
 
 #flash {
   margin: 20px;
   height: 30px;
+  text-align: center;
+}
+
+#flash_notice {
+	margin: auto;
+	width: 300px;
+	background-color: rgba(130,230,255,0.8)
 }
 
 .box {
