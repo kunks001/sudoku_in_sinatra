@@ -3,6 +3,8 @@ require_relative './lib/grid'
 require_relative './lib/cell'
 require_relative './helpers/helpers'
 
+require 'newrelic_rpm'
+
 require 'sinatra/partial'
 set :partial_template_engine, :erb
 
