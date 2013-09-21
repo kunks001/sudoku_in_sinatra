@@ -1,9 +1,14 @@
 body {
 	text-align: center;
 	font-family: Arial;
-	background: url(/images/kanagawa_wave.jpg) no-repeat 0 0 fixed;
+	background: url(/images/background.jpg) no-repeat 0 0 fixed;
 	background-size: cover;
 
+}
+
+#content {
+	position: relative;
+	z-index: 100;
 }
 
 div.box, div.cell{
@@ -26,7 +31,7 @@ a {
 }
 
 #save-button-image {
-	width: 180px;
+	width: 160px;
 }
 
 #check-answers-button {
@@ -44,8 +49,25 @@ a {
 }
 
 #see-solution-image {
-	width: 190px;
+	width: 180px;
 	margin-bottom: -10px;
+}
+
+#back-to-puzzle-button {
+	width: 240px;
+	text-align: center;
+}
+
+#back-to-puzzle-image {
+	width: 190px;
+}
+
+#button-background {
+	position: relative;
+	width: 900px;
+	height: 200px;
+	margin-top: -180px;
+	z-index: -1;
 }
 
 #links {

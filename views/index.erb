@@ -1,4 +1,6 @@
  <img id="logo" src="/images/logo.png">
+
+ <div id="content">
  
   <div id="flash">
     <div id="flash_notice"><%= flash.now[:notice] %></div>
@@ -39,8 +41,8 @@
       <% end %>
 
     <% if @current_solution == session[:solution] %>
-      <a href="/clear_solution"><button class="clicked-button" >
-        Back to puzzle</button>
+      <a href="/clear_solution"><button class="clicked-button" id="back-to-puzzle-button">
+        <img src="/images/back_to_puzzle_button.png" id="see-solution-image"></button>
       </a>
     <% end %>
   </form> 
@@ -51,3 +53,7 @@
   <a href="/restart">RESTART</a>
 </div>
 <p>Made by Srikanth Kunkulagunta at <a href="http://makersacademy.com">Makers Academy</a>, using ruby and sinatra.</p>
+
+</div>
+
+<div id="button-background"><img src="/images/button_background.png"></div>
