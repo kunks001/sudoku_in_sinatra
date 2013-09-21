@@ -1,10 +1,9 @@
 body {
 	text-align: center;
 	font-family: Arial;
-	background: url(/images/background.jpg) no-repeat 0 0 fixed;
-	background-size: cover;
-
+	background-size: cover
 }
+
 
 #content {
 	position: relative;

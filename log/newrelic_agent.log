@@ -1195,3 +1195,172 @@
 [09/21/13 18:57:52 +0100 Srikanths-MacBook-Pro.local (35534)] INFO : Installing deferred Rack instrumentation
 [09/21/13 18:57:52 +0100 Srikanths-MacBook-Pro.local (35534)] INFO : Finished instrumentation
 [09/21/13 18:57:52 +0100 Srikanths-MacBook-Pro.local (35534)] INFO : Doing deferred dependency-detection before Rack startup
+[09/21/13 19:02:46 +0100 Srikanths-MacBook-Pro.local (35566)] INFO : Starting the New Relic agent in "development" environment.
+[09/21/13 19:02:46 +0100 Srikanths-MacBook-Pro.local (35566)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[09/21/13 19:02:46 +0100 Srikanths-MacBook-Pro.local (35566)] INFO : Reading configuration from config/newrelic.yml
+[09/21/13 19:02:46 +0100 Srikanths-MacBook-Pro.local (35566)] INFO : Enabling the Request Sampler.
+[09/21/13 19:02:46 +0100 Srikanths-MacBook-Pro.local (35566)] INFO : Environment: development
+[09/21/13 19:02:46 +0100 Srikanths-MacBook-Pro.local (35566)] INFO : Dispatcher: webrick
+[09/21/13 19:02:46 +0100 Srikanths-MacBook-Pro.local (35566)] INFO : Application: My Application
+[09/21/13 19:02:46 +0100 Srikanths-MacBook-Pro.local (35566)] WARN : Agent configured not to send data in this environment.
+[09/21/13 19:02:46 +0100 Srikanths-MacBook-Pro.local (35566)] INFO : Installing Net instrumentation
+[09/21/13 19:02:46 +0100 Srikanths-MacBook-Pro.local (35566)] INFO : Installing Sinatra instrumentation
+[09/21/13 19:02:46 +0100 Srikanths-MacBook-Pro.local (35566)] INFO : Installing deferred Rack instrumentation
+[09/21/13 19:02:46 +0100 Srikanths-MacBook-Pro.local (35566)] INFO : Finished instrumentation
+[09/21/13 19:02:46 +0100 Srikanths-MacBook-Pro.local (35566)] INFO : Doing deferred dependency-detection before Rack startup
+[09/21/13 19:02:47 +0100 Srikanths-MacBook-Pro.local (35569)] INFO : Starting the New Relic agent in "development" environment.
+[09/21/13 19:02:47 +0100 Srikanths-MacBook-Pro.local (35569)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[09/21/13 19:02:47 +0100 Srikanths-MacBook-Pro.local (35569)] INFO : Reading configuration from config/newrelic.yml
+[09/21/13 19:02:47 +0100 Srikanths-MacBook-Pro.local (35569)] INFO : Enabling the Request Sampler.
+[09/21/13 19:02:47 +0100 Srikanths-MacBook-Pro.local (35569)] INFO : Environment: development
+[09/21/13 19:02:47 +0100 Srikanths-MacBook-Pro.local (35569)] INFO : Dispatcher: webrick
+[09/21/13 19:02:47 +0100 Srikanths-MacBook-Pro.local (35569)] INFO : Application: My Application
+[09/21/13 19:02:47 +0100 Srikanths-MacBook-Pro.local (35569)] WARN : Agent configured not to send data in this environment.
+[09/21/13 19:02:47 +0100 Srikanths-MacBook-Pro.local (35569)] INFO : Installing Net instrumentation
+[09/21/13 19:02:47 +0100 Srikanths-MacBook-Pro.local (35569)] INFO : Installing Sinatra instrumentation
+[09/21/13 19:02:47 +0100 Srikanths-MacBook-Pro.local (35569)] INFO : Installing deferred Rack instrumentation
+[09/21/13 19:02:47 +0100 Srikanths-MacBook-Pro.local (35569)] INFO : Finished instrumentation
+[09/21/13 19:02:47 +0100 Srikanths-MacBook-Pro.local (35569)] INFO : Doing deferred dependency-detection before Rack startup
+[09/21/13 19:05:07 +0100 Srikanths-MacBook-Pro.local (35575)] INFO : Starting the New Relic agent in "development" environment.
+[09/21/13 19:05:07 +0100 Srikanths-MacBook-Pro.local (35575)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[09/21/13 19:05:07 +0100 Srikanths-MacBook-Pro.local (35575)] INFO : Reading configuration from config/newrelic.yml
+[09/21/13 19:05:07 +0100 Srikanths-MacBook-Pro.local (35575)] INFO : Enabling the Request Sampler.
+[09/21/13 19:05:07 +0100 Srikanths-MacBook-Pro.local (35575)] INFO : Environment: development
+[09/21/13 19:05:07 +0100 Srikanths-MacBook-Pro.local (35575)] INFO : Dispatcher: webrick
+[09/21/13 19:05:07 +0100 Srikanths-MacBook-Pro.local (35575)] INFO : Application: My Application
+[09/21/13 19:05:07 +0100 Srikanths-MacBook-Pro.local (35575)] WARN : Agent configured not to send data in this environment.
+[09/21/13 19:05:07 +0100 Srikanths-MacBook-Pro.local (35575)] INFO : Installing Net instrumentation
+[09/21/13 19:05:07 +0100 Srikanths-MacBook-Pro.local (35575)] INFO : Installing Sinatra instrumentation
+[09/21/13 19:05:07 +0100 Srikanths-MacBook-Pro.local (35575)] INFO : Installing deferred Rack instrumentation
+[09/21/13 19:05:07 +0100 Srikanths-MacBook-Pro.local (35575)] INFO : Finished instrumentation
+[09/21/13 19:05:07 +0100 Srikanths-MacBook-Pro.local (35575)] INFO : Doing deferred dependency-detection before Rack startup
+[09/21/13 19:05:07 +0100 Srikanths-MacBook-Pro.local (35578)] INFO : Starting the New Relic agent in "development" environment.
+[09/21/13 19:05:07 +0100 Srikanths-MacBook-Pro.local (35578)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[09/21/13 19:05:07 +0100 Srikanths-MacBook-Pro.local (35578)] INFO : Reading configuration from config/newrelic.yml
+[09/21/13 19:05:07 +0100 Srikanths-MacBook-Pro.local (35578)] INFO : Enabling the Request Sampler.
+[09/21/13 19:05:07 +0100 Srikanths-MacBook-Pro.local (35578)] INFO : Environment: development
+[09/21/13 19:05:07 +0100 Srikanths-MacBook-Pro.local (35578)] INFO : Dispatcher: webrick
+[09/21/13 19:05:07 +0100 Srikanths-MacBook-Pro.local (35578)] INFO : Application: My Application
+[09/21/13 19:05:07 +0100 Srikanths-MacBook-Pro.local (35578)] WARN : Agent configured not to send data in this environment.
+[09/21/13 19:05:07 +0100 Srikanths-MacBook-Pro.local (35578)] INFO : Installing Net instrumentation
+[09/21/13 19:05:07 +0100 Srikanths-MacBook-Pro.local (35578)] INFO : Installing Sinatra instrumentation
+[09/21/13 19:05:07 +0100 Srikanths-MacBook-Pro.local (35578)] INFO : Installing deferred Rack instrumentation
+[09/21/13 19:05:07 +0100 Srikanths-MacBook-Pro.local (35578)] INFO : Finished instrumentation
+[09/21/13 19:05:07 +0100 Srikanths-MacBook-Pro.local (35578)] INFO : Doing deferred dependency-detection before Rack startup
+[09/21/13 19:05:41 +0100 Srikanths-MacBook-Pro.local (35581)] INFO : Starting the New Relic agent in "development" environment.
+[09/21/13 19:05:41 +0100 Srikanths-MacBook-Pro.local (35581)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[09/21/13 19:05:41 +0100 Srikanths-MacBook-Pro.local (35581)] INFO : Reading configuration from config/newrelic.yml
+[09/21/13 19:05:41 +0100 Srikanths-MacBook-Pro.local (35581)] INFO : Enabling the Request Sampler.
+[09/21/13 19:05:41 +0100 Srikanths-MacBook-Pro.local (35581)] INFO : Environment: development
+[09/21/13 19:05:41 +0100 Srikanths-MacBook-Pro.local (35581)] INFO : Dispatcher: webrick
+[09/21/13 19:05:41 +0100 Srikanths-MacBook-Pro.local (35581)] INFO : Application: My Application
+[09/21/13 19:05:41 +0100 Srikanths-MacBook-Pro.local (35581)] WARN : Agent configured not to send data in this environment.
+[09/21/13 19:05:41 +0100 Srikanths-MacBook-Pro.local (35581)] INFO : Installing Net instrumentation
+[09/21/13 19:05:41 +0100 Srikanths-MacBook-Pro.local (35581)] INFO : Installing Sinatra instrumentation
+[09/21/13 19:05:41 +0100 Srikanths-MacBook-Pro.local (35581)] INFO : Installing deferred Rack instrumentation
+[09/21/13 19:05:41 +0100 Srikanths-MacBook-Pro.local (35581)] INFO : Finished instrumentation
+[09/21/13 19:05:41 +0100 Srikanths-MacBook-Pro.local (35581)] INFO : Doing deferred dependency-detection before Rack startup
+[09/21/13 19:05:41 +0100 Srikanths-MacBook-Pro.local (35584)] INFO : Starting the New Relic agent in "development" environment.
+[09/21/13 19:05:41 +0100 Srikanths-MacBook-Pro.local (35584)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[09/21/13 19:05:41 +0100 Srikanths-MacBook-Pro.local (35584)] INFO : Reading configuration from config/newrelic.yml
+[09/21/13 19:05:41 +0100 Srikanths-MacBook-Pro.local (35584)] INFO : Enabling the Request Sampler.
+[09/21/13 19:05:41 +0100 Srikanths-MacBook-Pro.local (35584)] INFO : Environment: development
+[09/21/13 19:05:41 +0100 Srikanths-MacBook-Pro.local (35584)] INFO : Dispatcher: webrick
+[09/21/13 19:05:41 +0100 Srikanths-MacBook-Pro.local (35584)] INFO : Application: My Application
+[09/21/13 19:05:41 +0100 Srikanths-MacBook-Pro.local (35584)] WARN : Agent configured not to send data in this environment.
+[09/21/13 19:05:41 +0100 Srikanths-MacBook-Pro.local (35584)] INFO : Installing Net instrumentation
+[09/21/13 19:05:41 +0100 Srikanths-MacBook-Pro.local (35584)] INFO : Installing Sinatra instrumentation
+[09/21/13 19:05:41 +0100 Srikanths-MacBook-Pro.local (35584)] INFO : Installing deferred Rack instrumentation
+[09/21/13 19:05:41 +0100 Srikanths-MacBook-Pro.local (35584)] INFO : Finished instrumentation
+[09/21/13 19:05:41 +0100 Srikanths-MacBook-Pro.local (35584)] INFO : Doing deferred dependency-detection before Rack startup
+[09/21/13 19:05:51 +0100 Srikanths-MacBook-Pro.local (35587)] INFO : Starting the New Relic agent in "development" environment.
+[09/21/13 19:05:51 +0100 Srikanths-MacBook-Pro.local (35587)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[09/21/13 19:05:51 +0100 Srikanths-MacBook-Pro.local (35587)] INFO : Reading configuration from config/newrelic.yml
+[09/21/13 19:05:51 +0100 Srikanths-MacBook-Pro.local (35587)] INFO : Enabling the Request Sampler.
+[09/21/13 19:05:51 +0100 Srikanths-MacBook-Pro.local (35587)] INFO : Environment: development
+[09/21/13 19:05:51 +0100 Srikanths-MacBook-Pro.local (35587)] INFO : Dispatcher: webrick
+[09/21/13 19:05:51 +0100 Srikanths-MacBook-Pro.local (35587)] INFO : Application: My Application
+[09/21/13 19:05:51 +0100 Srikanths-MacBook-Pro.local (35587)] WARN : Agent configured not to send data in this environment.
+[09/21/13 19:05:51 +0100 Srikanths-MacBook-Pro.local (35587)] INFO : Installing Net instrumentation
+[09/21/13 19:05:51 +0100 Srikanths-MacBook-Pro.local (35587)] INFO : Installing Sinatra instrumentation
+[09/21/13 19:05:51 +0100 Srikanths-MacBook-Pro.local (35587)] INFO : Installing deferred Rack instrumentation
+[09/21/13 19:05:51 +0100 Srikanths-MacBook-Pro.local (35587)] INFO : Finished instrumentation
+[09/21/13 19:05:51 +0100 Srikanths-MacBook-Pro.local (35587)] INFO : Doing deferred dependency-detection before Rack startup
+[09/21/13 19:05:51 +0100 Srikanths-MacBook-Pro.local (35590)] INFO : Starting the New Relic agent in "development" environment.
+[09/21/13 19:05:51 +0100 Srikanths-MacBook-Pro.local (35590)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[09/21/13 19:05:51 +0100 Srikanths-MacBook-Pro.local (35590)] INFO : Reading configuration from config/newrelic.yml
+[09/21/13 19:05:51 +0100 Srikanths-MacBook-Pro.local (35590)] INFO : Enabling the Request Sampler.
+[09/21/13 19:05:51 +0100 Srikanths-MacBook-Pro.local (35590)] INFO : Environment: development
+[09/21/13 19:05:51 +0100 Srikanths-MacBook-Pro.local (35590)] INFO : Dispatcher: webrick
+[09/21/13 19:05:51 +0100 Srikanths-MacBook-Pro.local (35590)] INFO : Application: My Application
+[09/21/13 19:05:51 +0100 Srikanths-MacBook-Pro.local (35590)] WARN : Agent configured not to send data in this environment.
+[09/21/13 19:05:51 +0100 Srikanths-MacBook-Pro.local (35590)] INFO : Installing Net instrumentation
+[09/21/13 19:05:51 +0100 Srikanths-MacBook-Pro.local (35590)] INFO : Installing Sinatra instrumentation
+[09/21/13 19:05:51 +0100 Srikanths-MacBook-Pro.local (35590)] INFO : Installing deferred Rack instrumentation
+[09/21/13 19:05:51 +0100 Srikanths-MacBook-Pro.local (35590)] INFO : Finished instrumentation
+[09/21/13 19:05:51 +0100 Srikanths-MacBook-Pro.local (35590)] INFO : Doing deferred dependency-detection before Rack startup
+[09/21/13 19:06:44 +0100 Srikanths-MacBook-Pro.local (35594)] INFO : Starting the New Relic agent in "development" environment.
+[09/21/13 19:06:44 +0100 Srikanths-MacBook-Pro.local (35594)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[09/21/13 19:06:44 +0100 Srikanths-MacBook-Pro.local (35594)] INFO : Reading configuration from config/newrelic.yml
+[09/21/13 19:06:44 +0100 Srikanths-MacBook-Pro.local (35594)] INFO : Enabling the Request Sampler.
+[09/21/13 19:06:44 +0100 Srikanths-MacBook-Pro.local (35594)] INFO : Environment: development
+[09/21/13 19:06:44 +0100 Srikanths-MacBook-Pro.local (35594)] INFO : Dispatcher: webrick
+[09/21/13 19:06:44 +0100 Srikanths-MacBook-Pro.local (35594)] INFO : Application: My Application
+[09/21/13 19:06:44 +0100 Srikanths-MacBook-Pro.local (35594)] WARN : Agent configured not to send data in this environment.
+[09/21/13 19:06:44 +0100 Srikanths-MacBook-Pro.local (35594)] INFO : Installing Net instrumentation
+[09/21/13 19:06:44 +0100 Srikanths-MacBook-Pro.local (35594)] INFO : Installing Sinatra instrumentation
+[09/21/13 19:06:44 +0100 Srikanths-MacBook-Pro.local (35594)] INFO : Installing deferred Rack instrumentation
+[09/21/13 19:06:44 +0100 Srikanths-MacBook-Pro.local (35594)] INFO : Finished instrumentation
+[09/21/13 19:06:44 +0100 Srikanths-MacBook-Pro.local (35594)] INFO : Doing deferred dependency-detection before Rack startup
+[09/21/13 19:06:44 +0100 Srikanths-MacBook-Pro.local (35597)] INFO : Starting the New Relic agent in "development" environment.
+[09/21/13 19:06:44 +0100 Srikanths-MacBook-Pro.local (35597)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[09/21/13 19:06:44 +0100 Srikanths-MacBook-Pro.local (35597)] INFO : Reading configuration from config/newrelic.yml
+[09/21/13 19:06:44 +0100 Srikanths-MacBook-Pro.local (35597)] INFO : Enabling the Request Sampler.
+[09/21/13 19:06:44 +0100 Srikanths-MacBook-Pro.local (35597)] INFO : Environment: development
+[09/21/13 19:06:44 +0100 Srikanths-MacBook-Pro.local (35597)] INFO : Dispatcher: webrick
+[09/21/13 19:06:44 +0100 Srikanths-MacBook-Pro.local (35597)] INFO : Application: My Application
+[09/21/13 19:06:44 +0100 Srikanths-MacBook-Pro.local (35597)] WARN : Agent configured not to send data in this environment.
+[09/21/13 19:06:44 +0100 Srikanths-MacBook-Pro.local (35597)] INFO : Installing Net instrumentation
+[09/21/13 19:06:44 +0100 Srikanths-MacBook-Pro.local (35597)] INFO : Installing Sinatra instrumentation
+[09/21/13 19:06:44 +0100 Srikanths-MacBook-Pro.local (35597)] INFO : Installing deferred Rack instrumentation
+[09/21/13 19:06:44 +0100 Srikanths-MacBook-Pro.local (35597)] INFO : Finished instrumentation
+[09/21/13 19:06:44 +0100 Srikanths-MacBook-Pro.local (35597)] INFO : Doing deferred dependency-detection before Rack startup
+[09/21/13 19:07:20 +0100 Srikanths-MacBook-Pro.local (35600)] INFO : Starting the New Relic agent in "development" environment.
+[09/21/13 19:07:20 +0100 Srikanths-MacBook-Pro.local (35600)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[09/21/13 19:07:20 +0100 Srikanths-MacBook-Pro.local (35600)] INFO : Reading configuration from config/newrelic.yml
+[09/21/13 19:07:20 +0100 Srikanths-MacBook-Pro.local (35600)] INFO : Enabling the Request Sampler.
+[09/21/13 19:07:20 +0100 Srikanths-MacBook-Pro.local (35600)] INFO : Environment: development
+[09/21/13 19:07:20 +0100 Srikanths-MacBook-Pro.local (35600)] INFO : Dispatcher: webrick
+[09/21/13 19:07:20 +0100 Srikanths-MacBook-Pro.local (35600)] INFO : Application: My Application
+[09/21/13 19:07:20 +0100 Srikanths-MacBook-Pro.local (35600)] WARN : Agent configured not to send data in this environment.
+[09/21/13 19:07:20 +0100 Srikanths-MacBook-Pro.local (35600)] INFO : Installing Net instrumentation
+[09/21/13 19:07:20 +0100 Srikanths-MacBook-Pro.local (35600)] INFO : Installing Sinatra instrumentation
+[09/21/13 19:07:20 +0100 Srikanths-MacBook-Pro.local (35600)] INFO : Installing deferred Rack instrumentation
+[09/21/13 19:07:20 +0100 Srikanths-MacBook-Pro.local (35600)] INFO : Finished instrumentation
+[09/21/13 19:07:20 +0100 Srikanths-MacBook-Pro.local (35600)] INFO : Doing deferred dependency-detection before Rack startup
+[09/21/13 19:07:20 +0100 Srikanths-MacBook-Pro.local (35603)] INFO : Starting the New Relic agent in "development" environment.
+[09/21/13 19:07:20 +0100 Srikanths-MacBook-Pro.local (35603)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[09/21/13 19:07:20 +0100 Srikanths-MacBook-Pro.local (35603)] INFO : Reading configuration from config/newrelic.yml
+[09/21/13 19:07:20 +0100 Srikanths-MacBook-Pro.local (35603)] INFO : Enabling the Request Sampler.
+[09/21/13 19:07:20 +0100 Srikanths-MacBook-Pro.local (35603)] INFO : Environment: development
+[09/21/13 19:07:20 +0100 Srikanths-MacBook-Pro.local (35603)] INFO : Dispatcher: webrick
+[09/21/13 19:07:20 +0100 Srikanths-MacBook-Pro.local (35603)] INFO : Application: My Application
+[09/21/13 19:07:20 +0100 Srikanths-MacBook-Pro.local (35603)] WARN : Agent configured not to send data in this environment.
+[09/21/13 19:07:20 +0100 Srikanths-MacBook-Pro.local (35603)] INFO : Installing Net instrumentation
+[09/21/13 19:07:20 +0100 Srikanths-MacBook-Pro.local (35603)] INFO : Installing Sinatra instrumentation
+[09/21/13 19:07:20 +0100 Srikanths-MacBook-Pro.local (35603)] INFO : Installing deferred Rack instrumentation
+[09/21/13 19:07:20 +0100 Srikanths-MacBook-Pro.local (35603)] INFO : Finished instrumentation
+[09/21/13 19:07:20 +0100 Srikanths-MacBook-Pro.local (35603)] INFO : Doing deferred dependency-detection before Rack startup
+[09/21/13 19:08:11 +0100 Srikanths-MacBook-Pro.local (35606)] INFO : Starting the New Relic agent in "development" environment.
+[09/21/13 19:08:11 +0100 Srikanths-MacBook-Pro.local (35606)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[09/21/13 19:08:11 +0100 Srikanths-MacBook-Pro.local (35606)] INFO : Reading configuration from config/newrelic.yml
+[09/21/13 19:08:11 +0100 Srikanths-MacBook-Pro.local (35606)] INFO : Enabling the Request Sampler.
+[09/21/13 19:08:11 +0100 Srikanths-MacBook-Pro.local (35606)] INFO : Environment: development
+[09/21/13 19:08:11 +0100 Srikanths-MacBook-Pro.local (35606)] INFO : Dispatcher: webrick
+[09/21/13 19:08:11 +0100 Srikanths-MacBook-Pro.local (35606)] INFO : Application: My Application
+[09/21/13 19:08:11 +0100 Srikanths-MacBook-Pro.local (35606)] WARN : Agent configured not to send data in this environment.
+[09/21/13 19:08:11 +0100 Srikanths-MacBook-Pro.local (35606)] INFO : Installing Net instrumentation
+[09/21/13 19:08:11 +0100 Srikanths-MacBook-Pro.local (35606)] INFO : Installing Sinatra instrumentation
+[09/21/13 19:08:11 +0100 Srikanths-MacBook-Pro.local (35606)] INFO : Installing deferred Rack instrumentation
+[09/21/13 19:08:11 +0100 Srikanths-MacBook-Pro.local (35606)] INFO : Finished instrumentation
+[09/21/13 19:08:11 +0100 Srikanths-MacBook-Pro.local (35606)] INFO : Doing deferred dependency-detection before Rack startup
