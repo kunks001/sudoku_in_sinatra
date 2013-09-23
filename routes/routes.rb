@@ -4,7 +4,8 @@ get '/' do
   @current_solution = session[:current_solution]
   @solution = session[:solution]
   @puzzle = session[:puzzle]      
-  erb :index
+  haml :index
+  # haml :index
 end
 
 post "/" do
@@ -33,7 +34,21 @@ get '/solution' do
   	@current_solution = session[:solution]
     @solution = session[:solution]
     @puzzle = session[:puzzle]
-    erb :index
+    # erb :index
+    haml :index
+  end
+end
+
+get '/new_game' do
+  if params["newGame"] = "easy"
+    session[:current_solution] = nil
+    generate_new_puzzle_if_necessary
+    redirect to("/")
+  elsif params["newGame"] = "hard"
+    session[:current_solution] = nil
+    generate_hard_puzzle
+    redirect to("/")
+  else
   end
 end
 
@@ -53,7 +68,8 @@ get '/clear_solution' do
   @current_solution = session[:current_solution] || session[:puzzle]
   @solution = session[:solution]
   @puzzle = session[:puzzle]
-  erb :index
+  # erb :index
+  haml :index
 end
 
 get '/restart' do

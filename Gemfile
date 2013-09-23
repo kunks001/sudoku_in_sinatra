@@ -6,12 +6,17 @@ gem 'sinatra'
 gem 'sinatra-partial'
 gem 'sinatra-mapping'
 gem 'rack-flash3'
+gem 'haml'
 
 gem 'newrelic_rpm'
 gem 'unicorn'
 
-group :development do
-	gem 'shotgun'
-	gem 'guard'
-	gem 'terminal-notifier-guard'
+group :development, :test do
+  gem 'shotgun'
+  gem 'guard'
+  gem 'terminal-notifier-guard'
+  gem 'rspec'
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'selenium-webdriver'
 end

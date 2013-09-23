@@ -1,4 +1,6 @@
 require 'sinatra'
+require 'haml'
+
 require_relative './lib/grid'
 require_relative './lib/cell'
 require_relative './helpers/helpers'
@@ -6,7 +8,7 @@ require_relative './helpers/helpers'
 require 'newrelic_rpm'
 
 require 'sinatra/partial'
-set :partial_template_engine, :erb
+set :partial_template_engine, :haml
 
 require 'rack-flash'
 use Rack::Flash
@@ -65,7 +67,6 @@ def generate_hard_puzzle
   session[:puzzle] = hard_puzzle(sudoku)
   session[:current_solution] = session[:puzzle]
 end
-
 
 def prepare_to_check_solution
   @check_solution = session[:check_solution]

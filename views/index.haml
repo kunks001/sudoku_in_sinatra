@@ -1,0 +1,63 @@
+%img#logo(src="/images/logo.png") 
+
+%form(method="get" action="/new_game")
+  Easy
+  %input(type="radio" name="newGame" value="easy")
+  Hard
+  %input(type="radio" name="newGame" value="hard")
+  %button(name="new_game_button" type="submit" value="new_game")
+
+#links
+  %a(href="/easy_puzzle")
+    NEW: EASY
+  %a(href="/hard_puzzle")
+    NEW: HARD
+  %a(href="/restart")
+    RESTART
+
+#content
+  #flash
+    #flash_notice
+      = flash.now[:notice]
+
+  #Sudoku
+    %form(action="/" method="post")
+      - 3.times do |row|
+        .row
+          - 3.times do |box|
+            .box<>
+              - 3.times do |cell_row|
+                .cell_row
+                  - 3.times do |cell|
+                    .cell<>
+                      = partial :_cell, :locals=>{:cell_index => row*27+box*3+cell_row*9+cell}  
+
+      %button(class="clicked-button" id="check-answers-button" name="clicked_button" type="submit" value="check_solution")
+        %img(src="/images/check_answers_button.png" id="check-answers-image")
+
+      %button(class="clicked-button" id="save-button" name="clicked_button" type="submit" value="save")
+        %img(src="/images/save_button.png" id="save-button-image")
+
+
+      - if @current_solution == session[:current_solution] || session[:puzzle] && @current_solution != session[:solution]
+        %button(class="clicked-button" id="see-solution-button" name="clicked_button" type="submit" value="check_finished_solution")
+          %img(src="/images/see_solution.png" id="see-solution-image")
+
+      - if @current_solution == session[:solution]
+        %a(href="/clear_solution")
+          %button(class="clicked-button" id="back-to-puzzle-button")
+            %img(src="/images/back_to_puzzle_button.png" id="back-to-puzzle-image")
+
+
+  / #links
+  /   %a(href="/easy_puzzle")
+  /     NEW: EASY
+  /   %a(href="/hard_puzzle")
+  /     NEW: HARD
+  /   %a(href="/restart")
+  /     RESTART
+  %p 
+    Made by Srikanth Kunkulagunta at 
+    %a(href="http://makersacademy.com")
+      Makers Academy
+    using ruby and sinatra

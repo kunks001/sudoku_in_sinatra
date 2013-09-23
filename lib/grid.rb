@@ -91,7 +91,6 @@ attr_reader :grid
 
 			if grid.solved?
 				steal_solution(grid)
-				return inspect_board
 			end
 		end
 	end
@@ -108,13 +107,5 @@ attr_reader :grid
 		@cells = grid.cells
 		@rows = grid.rows
 		@boxes = grid.boxes
-	end
-
-	def inspect_board
-		puts "_____________________________________"
-		@rows.each do |row|
-			row.each { |cell| print "| #{cell.value} " }
-			puts "|\n_____________________________________"
-		end
 	end
 end

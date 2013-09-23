@@ -1,0 +1,4 @@
+- cell_value = cell_value(@current_solution[cell_index])
+- colour_class = colour_class(@check_solution, @puzzle[cell_index], @current_solution[cell_index], @solution[cell_index])
+- readonly(colour_class)
+%input{autocomplete: "off", maxlength: "1", name: "cell[]", type: "text", value: cell_value, class: colour_class, readonly: readonly(colour_class)}
