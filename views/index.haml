@@ -1,19 +1,27 @@
 %img#logo(src="/images/logo.png") 
-
-%form(method="get" action="/new_game")
-  Easy
-  %input(type="radio" name="newGame" value="easy")
-  Hard
-  %input(type="radio" name="newGame" value="hard")
-  %button(name="new_game_button" type="submit" value="new_game")
-
-#links
+/ %table
+/   %tr
+/     %td
+/       %form(method="get" action="/new_game")
+/         Easy
+/         %input(type="radio" name="newGame" value="easy")
+/         Hard
+/         %input(type="radio" name="newGame" value="hard")
+/         %button(class="clicked-button" name="new_game_button" type="submit" value="new_game")
+/           %img(src="/images/new_game.png" id="new_game")
+/     %td
+/       #links
+/         %a(href="/restart")
+/           %img(src="/images/restart.png" id="restart")
+%div
   %a(href="/easy_puzzle")
-    NEW: EASY
+    %img(src="/images/easy_puzzle.png" id="easy_puzzle")
+%div
   %a(href="/hard_puzzle")
-    NEW: HARD
+    %img(src="/images/hard_puzzle.png" id="hard_puzzle")
+%div
   %a(href="/restart")
-    RESTART
+    %img(src="/images/restart.png" id="restart")
 
 #content
   #flash
@@ -21,7 +29,7 @@
       = flash.now[:notice]
 
   #Sudoku
-    %form(action="/" method="post")
+    %form(action="/" method="post") 
       - 3.times do |row|
         .row
           - 3.times do |box|
@@ -48,16 +56,9 @@
           %button(class="clicked-button" id="back-to-puzzle-button")
             %img(src="/images/back_to_puzzle_button.png" id="back-to-puzzle-image")
 
-
-  / #links
-  /   %a(href="/easy_puzzle")
-  /     NEW: EASY
-  /   %a(href="/hard_puzzle")
-  /     NEW: HARD
-  /   %a(href="/restart")
-  /     RESTART
-  %p 
-    Made by Srikanth Kunkulagunta at 
-    %a(href="http://makersacademy.com")
-      Makers Academy
-    using ruby and sinatra
+  #footer
+    %p 
+      Made by Srikanth Kunkulagunta at 
+      %a(href="http://makersacademy.com")
+        Makers Academy
+      using ruby and sinatra

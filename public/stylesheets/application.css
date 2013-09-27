@@ -105,6 +105,22 @@ a {
 	width: 260px;
 }
 
+#restart {
+	margin: auto;
+	padding-left: 20px;
+	width:150px;
+	margin-bottom: -40px;
+}
+
+#easy_puzzle {
+	margin: auto;
+	width: 250px;
+}
+
+#hard_puzzle {
+	width: 250px;
+}
+
 #links {
 	margin-top: 20px;
 }
@@ -177,4 +193,14 @@ a {
 #logo {
 	margin-top: 30px;
 	width: 350px;
+}
+
+#footer {
+	height: 50px;
+	width: 100%;
+	background-color: rgba(255,255,255,0.7);
+}
+
+#footer p {
+	padding-top: 15px;
 }

@@ -18,5 +18,7 @@ group :development, :test do
   gem 'rspec'
   gem 'rspec-rails'
   gem 'capybara'
+  gem 'cucumber-sinatra'
+  gem 'nokogiri'
   gem 'selenium-webdriver'
 end

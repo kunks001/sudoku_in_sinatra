@@ -29,7 +29,7 @@ end
 
 get '/solution' do
   if session[:current_solution] == nil
-    redirect to("/")
+    redirect to("/")  
   else
   	@current_solution = session[:solution]
     @solution = session[:solution]
@@ -40,11 +40,11 @@ get '/solution' do
 end
 
 get '/new_game' do
-  if params["newGame"] = "easy"
+  if params["newGame"] == "easy"
     session[:current_solution] = nil
     generate_new_puzzle_if_necessary
     redirect to("/")
-  elsif params["newGame"] = "hard"
+  elsif params["newGame"] == "hard"
     session[:current_solution] = nil
     generate_hard_puzzle
     redirect to("/")
