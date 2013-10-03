@@ -6,5 +6,18 @@
     %link(rel="stylesheet" type="text/css" href="/stylesheets/application.css")
     / %script(src="/javascript/application.js")
 
+    / :javascript
+    /   $.get('/', function(response.current_solution) {
+    /     alert('The server said ' + response);
+    /   })
+
+    /   $.get('/', function(response.solution) {
+    /     alert('The server said ' + response);
+    /   })
+
+    /   $.get('/', function(response.puzzle) {
+    /     alert('The server said ' + response);
+    /   })
+
   %body(background="/images/background.jpg")
     =yield
