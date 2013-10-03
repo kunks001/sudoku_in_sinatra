@@ -8,6 +8,7 @@ class Sudoku < Sinatra::Base
 require_relative './lib/grid'
 require_relative './lib/cell'
 require './helpers/helpers'
+# require './routes/routes'
 
   require 'newrelic_rpm'
   set :partial_template_engine, :haml
@@ -118,7 +119,6 @@ require './helpers/helpers'
     elsif params[:clicked_button] == "check_finished_solution"
       session[:check_solution] = false
       redirect to ('/solution')
-      
     end
   end
 
@@ -163,8 +163,8 @@ require './helpers/helpers'
     @current_solution = session[:current_solution] || session[:puzzle]
     @solution = session[:solution]
     @puzzle = session[:puzzle]
-    # erb :index
-    haml :index
+    # haml :index
+    redirect to("/")
   end
 
   get '/restart' do

@@ -51,10 +51,10 @@
         %button(class="clicked-button" id="see-solution-button" name="clicked_button" type="submit" value="check_finished_solution")
           %img(src="/images/see_solution.png" id="see-solution-image")
 
-      - if @current_solution == session[:solution]
-        %a(href="/clear_solution")
-          %button(class="clicked-button" id="back-to-puzzle-button")
-            %img(src="/images/back_to_puzzle_button.png" id="back-to-puzzle-image")
+    - if @current_solution == session[:solution]
+      %a(href="/clear_solution")
+        %button(class="clicked-button" id="back-to-puzzle-button")
+          %img(src="/images/back_to_puzzle_button.png" id="back-to-puzzle-image")
 
   #footer
     %p 
