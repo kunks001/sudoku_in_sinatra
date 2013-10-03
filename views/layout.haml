@@ -4,19 +4,13 @@
     %title Sudoku Game
     
     %link(rel="stylesheet" type="text/css" href="/stylesheets/application.css")
+    %script(src="http://code.jquery.com/jquery-2.0.3.js")
     / %script(src="/javascript/application.js")
 
     / :javascript
-    /   $.get('/', function(response.current_solution) {
-    /     alert('The server said ' + response);
-    /   })
-
-    /   $.get('/', function(response.solution) {
-    /     alert('The server said ' + response);
-    /   })
-
-    /   $.get('/', function(response.puzzle) {
-    /     alert('The server said ' + response);
+    /   $.get('/', function(response) {
+    /     var hash = $.parseJSON(response);
+    /     //alert(hash.current_solution);
     /   })
 
   %body(background="/images/background.jpg")

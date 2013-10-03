@@ -1,5 +1,3 @@
-class Sudoku < Sinatra::Base
-
 get '/' do
   prepare_to_check_solution
   generate_new_puzzle_if_necessary
@@ -7,14 +5,16 @@ get '/' do
   @solution = session[:solution]
   @puzzle = session[:puzzle]      
   # if request.xhr?
+  #   content_type :json
   #   {
   #     :current_solution => @current_solution,
   #     :solution => @solution,
   #     :puzzle => @puzzle
   #   }.to_json
   # else
-    haml :index
+  #   haml :index
   # end
+  haml :index
 end
 
 post "/" do
@@ -78,12 +78,10 @@ get '/clear_solution' do
   @solution = session[:solution]
   @puzzle = session[:puzzle]
   # erb :index
-  haml :index
+  redirect to("/")
 end
 
 get '/restart' do
   session[:current_solution] = session[:puzzle]
   redirect to("/")
-end
-
 end
