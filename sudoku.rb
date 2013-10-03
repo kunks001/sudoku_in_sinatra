@@ -1,9 +1,6 @@
 require 'sinatra/base'
 require 'haml'
 require 'sinatra/partial'
-require 'sinatra'
-  require 'rack-flash'
-  require 'newrelic_rpm'
 
 
 class Sudoku < Sinatra::Base
@@ -12,11 +9,12 @@ require_relative './lib/grid'
 require_relative './lib/cell'
 require './helpers/helpers'
 
-
+  require 'newrelic_rpm'
   set :partial_template_engine, :haml
+
+  require 'rack-flash'
   use Rack::Flash
   register Sinatra::Partial
-set :partial_template_engine, :erb
 
   enable :sessions
 
@@ -101,17 +99,8 @@ set :partial_template_engine, :erb
     @current_solution = session[:current_solution]
     @solution = session[:solution]
     @puzzle = session[:puzzle]      
-    # haml :index
     haml :index
-  #   if request.xhr?
-  #   {
-  #     :current_solution => @current_solution,
-  #     :solution => @solution,
-  #     :puzzle => @puzzle
-  #   }.to_json
-  # else
-  #   haml :index
-  # end
+    # haml :index
   end
 
   post "/" do

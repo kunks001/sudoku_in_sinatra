@@ -23,8 +23,9 @@ let(:grid_hard){Grid.new('800000000003600000070090200050007000000045700000100030
 		end
 
 		it 'switch to brute force method when guesswork is needed' do
+			(grid_hard.solve).should_receive(:guess_next_empty_cell_value)
 			expect(grid_hard).to receive(:guess_next_empty_cell_value)
-			grid_hard.solve
+			# grid_hard.solve
 		end
 
 		it 'make a guess at the value of a cell' do

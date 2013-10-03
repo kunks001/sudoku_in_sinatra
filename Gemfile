@@ -6,11 +6,11 @@ gem 'sinatra'
 gem 'sinatra-partial'
 gem 'sinatra-mapping'
 gem 'rack-flash3'
+gem 'haml'
 
 gem 'newrelic_rpm'
 gem 'unicorn'
 
-<<<<<<< HEAD
 group :development, :test do
   gem 'shotgun'
   gem 'guard'
@@ -21,10 +21,4 @@ group :development, :test do
   gem 'cucumber-sinatra'
   gem 'nokogiri'
   gem 'selenium-webdriver'
-=======
-group :development do
-	gem 'shotgun'
-	gem 'guard'
-	gem 'terminal-notifier-guard'
->>>>>>> parent of 3feac96... converted views to haml and started capybara testing
 end
