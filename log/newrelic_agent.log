@@ -1364,6 +1364,7 @@
 [09/21/13 19:08:11 +0100 Srikanths-MacBook-Pro.local (35606)] INFO : Installing deferred Rack instrumentation
 [09/21/13 19:08:11 +0100 Srikanths-MacBook-Pro.local (35606)] INFO : Finished instrumentation
 [09/21/13 19:08:11 +0100 Srikanths-MacBook-Pro.local (35606)] INFO : Doing deferred dependency-detection before Rack startup
+<<<<<<< HEAD
 [09/21/13 19:52:07 +0100 Srikanths-MacBook-Pro.local (35662)] INFO : Starting the New Relic agent in "development" environment.
 [09/21/13 19:52:07 +0100 Srikanths-MacBook-Pro.local (35662)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
 [09/21/13 19:52:07 +0100 Srikanths-MacBook-Pro.local (35662)] INFO : Reading configuration from config/newrelic.yml
@@ -13201,3 +13202,5 @@
 [10/03/13 17:27:32 +0100 Srikanths-MacBook-Pro.local (54933)] INFO : Installing deferred Rack instrumentation
 [10/03/13 17:27:32 +0100 Srikanths-MacBook-Pro.local (54933)] INFO : Finished instrumentation
 [10/03/13 17:27:32 +0100 Srikanths-MacBook-Pro.local (54933)] INFO : Doing deferred dependency-detection before Rack startup
+=======
+>>>>>>> parent of 3feac96... converted views to haml and started capybara testing

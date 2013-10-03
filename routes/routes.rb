@@ -4,6 +4,7 @@ get '/' do
   @current_solution = session[:current_solution]
   @solution = session[:solution]
   @puzzle = session[:puzzle]      
+<<<<<<< HEAD
   # if request.xhr?
   #   content_type :json
   #   {
@@ -15,6 +16,9 @@ get '/' do
   #   haml :index
   # end
   haml :index
+=======
+  erb :index
+>>>>>>> parent of 3feac96... converted views to haml and started capybara testing
 end
 
 post "/" do
@@ -43,6 +47,7 @@ get '/solution' do
   	@current_solution = session[:solution]
     @solution = session[:solution]
     @puzzle = session[:puzzle]
+<<<<<<< HEAD
     # erb :index
     haml :index
   end
@@ -58,6 +63,9 @@ get '/new_game' do
     generate_hard_puzzle
     redirect to("/")
   else
+=======
+    erb :index
+>>>>>>> parent of 3feac96... converted views to haml and started capybara testing
   end
 end
 
@@ -77,8 +85,12 @@ get '/clear_solution' do
   @current_solution = session[:current_solution] || session[:puzzle]
   @solution = session[:solution]
   @puzzle = session[:puzzle]
+<<<<<<< HEAD
   # erb :index
   redirect to("/")
+=======
+  erb :index
+>>>>>>> parent of 3feac96... converted views to haml and started capybara testing
 end
 
 get '/restart' do

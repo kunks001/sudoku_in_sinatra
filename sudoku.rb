@@ -1,6 +1,9 @@
 require 'sinatra/base'
 require 'haml'
 require 'sinatra/partial'
+require 'sinatra'
+  require 'rack-flash'
+  require 'newrelic_rpm'
 
 
 class Sudoku < Sinatra::Base
@@ -9,12 +12,11 @@ require_relative './lib/grid'
 require_relative './lib/cell'
 require './helpers/helpers'
 
-  require 'newrelic_rpm'
-  set :partial_template_engine, :haml
 
-  require 'rack-flash'
+  set :partial_template_engine, :haml
   use Rack::Flash
   register Sinatra::Partial
+set :partial_template_engine, :erb
 
   enable :sessions
 
