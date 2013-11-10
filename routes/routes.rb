@@ -7,27 +7,6 @@ class Sudoku < Sinatra::Base
     @solution = session[:solution]
     @puzzle = session[:puzzle]      
     haml :index
-    # haml :index
-  end
-
-  post "/" do
-    # cells = box_order_to_row_order(params["cell"])
-    # session[:current_solution] = cells.map{|value| value.to_i }.join
-
-    # if params[:clicked_button] == "check_solution"
-    #     session[:check_solution] = true
-    #     redirect to("/")
-
-    # elsif params[:clicked_button] == "save"
-    #   session[:check_solution] = false
-    #   redirect to("/")
-
-    # elsif params[:clicked_button] == "check_finished_solution"
-    #   session[:check_solution] = false
-    #   redirect to ('/solution')
-      
-    # end
-    raise 'nothing works :)'
   end
 
   get '/solution' do
@@ -37,7 +16,6 @@ class Sudoku < Sinatra::Base
     	@current_solution = session[:solution]
       @solution = session[:solution]
       @puzzle = session[:puzzle]
-      # erb :index
       haml :index
     end
   end
@@ -71,7 +49,6 @@ class Sudoku < Sinatra::Base
     @current_solution = session[:current_solution] || session[:puzzle]
     @solution = session[:solution]
     @puzzle = session[:puzzle]
-    # erb :index
     haml :index
   end
 
